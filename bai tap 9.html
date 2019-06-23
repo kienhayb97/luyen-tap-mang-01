@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+    let mangc = []
+    let mangb = []
+    let manga = []
+    for (i = 0; i < 10; i++) {
+        let nhap = prompt("nhap mang a");
+        manga.push(nhap)
+    }
+    for (i = 0; i < 10; i++) {
+        let nhap = prompt("nhap mang b");
+        mangb.push(nhap)
+    }
+    mangc.push(manga, mangb);
+    alert(mangc)
+
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="demo1"></p>
+
+<p id="demo2"></p>
+
+<script>
+    let mang=[]
+    for (i=0;i<10;i++){
+        let nhap=prompt("nhap mang ")
+        mang.push(nhap)
+    }
+
+
+    document.getElementById("demo1").innerHTML = mang;
+
+    mang.sort(function(a, b){return b - a});
+
+    document.getElementById("demo2").innerHTML = mang;
+
+</script>
+</body>
+</html>

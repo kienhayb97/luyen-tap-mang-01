@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array = [18, 12, 4, 12, 12, 32, 213, 2, 15, 5];
+    let max=array[0];
+    let tong=0
+    for (let i=0;i<array.length;i++){
+        tong+=array[i];
+        if (max<array[i]){
+            max=array[i]
+        }
+    }
+    alert(tong/array.length+","+max)
+</script>
+</body>
+</html>

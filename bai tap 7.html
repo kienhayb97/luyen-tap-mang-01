@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let dem = 0;
+    let anh=0;
+    for (let i = 0; i < 10; i++) {
+        let so = prompt("nhap so:");
+        mang.push(so);
+    }
+    let v = prompt("nhap gia tri co trong mang");
+    for (let i = 0; i < 10; i++) {
+        if (v == mang[i]) {
+            dem++;
+            anh=i
+        }
+
+    }
+    if (dem == 0) {
+        alert(v + "is not in the array");
+    } else {
+       for (j=anh;j<mang.length-1;j++){
+           let temp=mang[j]
+           mang[j]=mang[j+1]
+           mang[j+1]=temp
+       }
+mang.pop();
+        alert("mang after delete v "+mang)
+    }
+    alert(mang)
+</script>
+
+</body>
+</html>

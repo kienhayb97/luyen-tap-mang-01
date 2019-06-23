@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let mang = [];
+    let dem = 0;
+    for (let i = 0; i < 10; i++) {
+        let so = prompt("nhap so:");
+        mang.push(so);
+    }
+    let v = prompt("nhap gia tri co trong mang");
+    for (let i = 0; i < 10; i++) {
+        if (v == mang[i]) {
+            dem++;
+        }
+
+    }
+    if (dem == 0) {
+        alert(v + "is not in the array");
+    } else {
+        alert(v + "is in the array");
+    }
+
+</script>
+</body>
+</html>
